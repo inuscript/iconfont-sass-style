@@ -17,4 +17,5 @@ rules:
       args: after-used
 env:
   node: true
+  mocha: true
 extends: 'eslint:recommended'
