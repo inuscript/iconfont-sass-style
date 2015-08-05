@@ -1,0 +1,15 @@
+{
+  "name": "iconfont-style",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test && eslint"
+  },
+  "keywords": [],
+  "author": "inuscript",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
