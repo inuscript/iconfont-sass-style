@@ -11,6 +11,10 @@ rules:
   semi:
     - 2
     - never
+  no-unused-vars:
+    - 1
+    - 
+      args: after-used
 env:
   node: true
 extends: 'eslint:recommended'
