@@ -21,7 +21,7 @@ var render = function(map, fontVariable, useDefaultFlag){
   var scss = [
     partials.map(map, fontVariable, useDefaultFlag),
     partials.mixin(),
-    partials.loader(fontVariable)
+    partials.load(fontVariable)
   ]
   return scss.join("\n\n")
 }

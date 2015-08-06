@@ -8,7 +8,7 @@ module.exports.map = function(data, fontName, asDefault){
 }
 
 module.exports.mixin = function(){
-  return template("mixin")
+  return template("mixins")
 }
 
 module.exports.load = function(fontVariable, functionName){

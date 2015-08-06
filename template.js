@@ -3,7 +3,7 @@ var path = require("path")
 var partialNames = require("./partials")
 
 var getPath = function(partial){
-  var base = path.join(__dirname, "../../", "/scss/")
+  var base = path.join(__dirname, "/scss/")
   return path.join(base, "/_" + partial + ".scss")
 }
 
