@@ -6,7 +6,7 @@ var fixtrueGlyphs = require("./fixture/codepoint.json")
 
 describe("sass rendering", function(){
   it("should rendering", function(){
-    var expect = fs.readFileSync("./test/fixture/output.scss")
+    var expect = fs.readFileSync("./test/fixture/output.scss", "utf-8")
     var result = iconfontSass(fixtrueGlyphs, "myFont", "/path/to/font")
     assert.equal(expect, result);
   })

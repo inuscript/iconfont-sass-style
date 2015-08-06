@@ -13,5 +13,6 @@ module.exports.mixin = function(){
 
 module.exports.load = function(fontVariable, functionName){
   functionName = functionName || "iconfont-generate-font"
+  fontVariable = "$" + fontVariable
   return "@include " + functionName + "(" + fontVariable + ");"
 }
