@@ -1,10 +1,13 @@
-var iconfontSass = require("./index")
+var iconfontSass = require("../index")
 var assert = require("assert")
 var fs = require("fs")
+var fixtrueGlyphs = require("./fixture/codepoint.json")
 
 
 describe("sass rendering", function(){
   it("should rendering", function(){
-    assert.equal(fs.readFileSync("./fixture/output.scss", iconfontSass()))
+    var expect = fs.readFileSync("./test/fixture/output.scss")
+    var result = iconfontSass(fixtrueGlyphs, "myFont", "/path/to/font")
+    assert.equal(expect, result);
   })
 })

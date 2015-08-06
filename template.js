@@ -8,7 +8,7 @@ var getPath = function(partial){
 }
 
 module.exports = function(partial){
-  var path = getPath(partial.name)
+  var path = getPath(partial)
   var scss = fs.readFileSync(path, "utf-8")
   return scss
 }

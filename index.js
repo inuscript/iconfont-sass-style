@@ -1,16 +1,8 @@
-var partials = require("./partials")
 var extend = require("extend")
+var glyphsMap = require("iconfont-glyphs-map")
 
-var sanitizeMap = function(data){
-  return Object.keys(data).reduce(function(obj, key){
-    var item = data[key]
-    if(item === undefined){
-      return obj
-    }
-    obj[key] = quote(item)
-    return obj
-  }, {})
-}
+var partials = require("./partials")
+var sanitizeMap = require("./sanitize-map")
 
 var generateFontData = function(glyphs, fontName, fontPath, iconPrefix){
   // default value
@@ -39,7 +31,7 @@ module.exports = function(glyphs, fontName, fontPath, opts){
     iconPrefix: ".icon-",
     fontVariable: "font",
     useDefaultFlag: true
-  }, opt)
+  }, opts)
   var fontData = generateFontData(glyphs, fontName, fontPath, options.iconPrefix)
   return render(fontData, options.fontVariable, options.useDefaultFlag)
 }
