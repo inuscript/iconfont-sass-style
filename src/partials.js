@@ -1,10 +1,10 @@
 var template = require("./template")
 var jsToSassString = require("json-sass/lib/jsToSassString") // TODO: Fix if json-sass bug
 
-module.exports.map = function(data, fontName, asDefault){
+module.exports.map = function(params, fontName, asDefault){
   var prefix = "$" + fontName + ": "
   var suffix = (asDefault) ? " !default;" : ";"
-  return prefix + jsToSassString(data) + suffix
+  return prefix + jsToSassString(params) + suffix
 }
 
 module.exports.mixins = function(){
