@@ -1,5 +1,5 @@
 var assert = require("assert")
-var partials = require("../sass/partials")
+var partials = require("../partials")
 
 describe("scss", function(){
   describe("map", function(){
