@@ -11,7 +11,7 @@
   }
 }
 
-@mixin iconfont-icons($prefix, $name, $glyphs){
+@mixin iconfont-icons($name, $glyphs, $prefix : ".icon-"){
   %icon {
     font-family: "#{$name}";
     -webkit-font-smoothing: antialiased;
@@ -38,8 +38,8 @@
     map-get($font, fontName)
   );
   @include iconfont-icons(
-    map-get($font, iconPrefix),
     map-get($font, fontName),
-    map-get($font, glyphs)
+    map-get($font, glyphs),
+    map-get($font, iconPrefix)
   );
 }

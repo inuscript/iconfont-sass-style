@@ -1,5 +1,4 @@
 $foobazFont: (
-  iconPrefix: ".icon-",
   fontName: "myFont",
   fontPath: "/path/to/font",
   glyphs: (
@@ -29,7 +28,7 @@ $foobazFont: (
   }
 }
 
-@mixin iconfont-icons($prefix, $name, $glyphs){
+@mixin iconfont-icons($name, $glyphs, $prefix : ".icon-"){
   %icon {
     font-family: "#{$name}";
     -webkit-font-smoothing: antialiased;
@@ -56,9 +55,9 @@ $foobazFont: (
     map-get($font, fontName)
   );
   @include iconfont-icons(
-    map-get($font, iconPrefix),
     map-get($font, fontName),
-    map-get($font, glyphs)
+    map-get($font, glyphs),
+    map-get($font, iconPrefix)
   );
 }
 

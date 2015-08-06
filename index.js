@@ -6,7 +6,6 @@ var sanitizeMap = require("./sanitize-map")
 
 var generateFontData = function(glyphs, fontName, fontPath, iconPrefix){
   // default value
-  iconPrefix = iconPrefix || ".icon-"
   var map = {
     iconPrefix: iconPrefix,
     fontName: fontName,
@@ -28,7 +27,7 @@ var render = function(map, fontVariable, useDefaultFlag){
 
 module.exports = function(glyphs, fontName, fontPath, opts){
   var options = extend({
-    iconPrefix: ".icon-",
+    iconPrefix: undefined,
     fontVariable: "font",
     useDefaultFlag: true
   }, opts)
