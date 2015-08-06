@@ -1,4 +1,4 @@
-@mixin iconfont-font-face($path, $name, $formats){
+@mixin iconfont-font-face($path, $name){
   $url: #{$path}#{$name};
   @font-face {
     font-family: $name;

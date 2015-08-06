@@ -54,7 +54,6 @@ $font: (
   @include iconfont-font-face(
     map-get($font, fontPath),
     map-get($font, fontName),
-    map-get($font, formats)
   );
   @include iconfont-icons(
     map-get($font, iconPrefix),
