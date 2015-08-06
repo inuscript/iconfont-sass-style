@@ -20,7 +20,7 @@ var generateFontData = function(glyphs, fontName, fontPath, iconPrefix){
 var render = function(map, fontVariable, useDefaultFlag){
   var scss = [
     partials.map(map, fontVariable, useDefaultFlag),
-    partials.mixin(),
+    partials.mixins(),
     partials.load(fontVariable)
   ]
   return scss.join("\n\n")

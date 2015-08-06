@@ -7,7 +7,7 @@ module.exports.map = function(data, fontName, asDefault){
   return prefix + jsToSassString(data) + suffix
 }
 
-module.exports.mixin = function(){
+module.exports.mixins = function(){
   return template("mixins")
 }
 
