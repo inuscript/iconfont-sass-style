@@ -1,0 +1,65 @@
+$foobazFont: (
+  iconPrefix: ".icon-",
+  fontName: "myFont",
+  fontPath: "/path/to/font",
+  glyphs: (
+    account: "E001",
+    arrow-down: "E002",
+    arrow-left: "E003",
+    arrow-right: "E004",
+    arrow-up: "E005",
+    basket: "E006",
+    close: "E007",
+    minus: "E008",
+    plus: "E009",
+    search: "E00A"
+  )
+) !default;
+
+@mixin iconfont-font-face($path, $name){
+  $url: #{$path}#{$name};
+  @font-face {
+    font-family: $name;
+    src: url('#{$url}.eot');
+    src: url('#{$url}.eot?#iefix') format('eot'),
+      url('#{$url}.woff2') format('woff2'),
+      url('#{$url}.woff') format('woff'),
+      url('#{$url}.ttf') format('truetype'),
+      url('#{$url}.svg##{$name}') format('svg');
+  }
+}
+
+@mixin iconfont-icons($prefix, $name, $glyphs){
+  %icon {
+    font-family: "#{$name}";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+    text-decoration: none;
+    text-transform: none;
+  }
+
+  @each $glyph, $code in $glyphs{
+    #{$prefix}#{$glyph}::before {
+      @extend %icon;
+      content: quote(#{$code});
+    }
+  }
+}
+
+@mixin iconfont-generate-font($font){
+  @include iconfont-font-face(
+    map-get($font, fontPath),
+    map-get($font, fontName)
+  );
+  @include iconfont-icons(
+    map-get($font, iconPrefix),
+    map-get($font, fontName),
+    map-get($font, glyphs)
+  );
+}
+
+@include iconfont-generate-font($foobazFont);
