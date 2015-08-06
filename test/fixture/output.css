@@ -3,7 +3,7 @@
   src: url("/path/to/fontmyFont.eot");
   src: url("/path/to/fontmyFont.eot?#iefix") format("eot"), url("/path/to/fontmyFont.woff2") format("woff2"), url("/path/to/fontmyFont.woff") format("woff"), url("/path/to/fontmyFont.ttf") format("truetype"), url("/path/to/fontmyFont.svg#myFont") format("svg"); }
 
-.icon-account::before, .icon-arrow-down::before, .icon-arrow-left::before, .icon-arrow-right::before, .icon-arrow-up::before, .icon-basket::before, .icon-close::before, .icon-minus::before, .icon-plus::before, .icon-search::before {
+.myIcon-account::before, .myIcon-arrow-down::before, .myIcon-arrow-left::before, .myIcon-arrow-right::before, .myIcon-arrow-up::before, .myIcon-basket::before, .myIcon-close::before, .myIcon-minus::before, .myIcon-plus::before, .myIcon-search::before {
   font-family: "myFont";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,32 +13,32 @@
   text-decoration: none;
   text-transform: none; }
 
-.icon-account::before {
+.myIcon-account::before {
   content: "E001"; }
 
-.icon-arrow-down::before {
+.myIcon-arrow-down::before {
   content: "E002"; }
 
-.icon-arrow-left::before {
+.myIcon-arrow-left::before {
   content: "E003"; }
 
-.icon-arrow-right::before {
+.myIcon-arrow-right::before {
   content: "E004"; }
 
-.icon-arrow-up::before {
+.myIcon-arrow-up::before {
   content: "E005"; }
 
-.icon-basket::before {
+.myIcon-basket::before {
   content: "E006"; }
 
-.icon-close::before {
+.myIcon-close::before {
   content: "E007"; }
 
-.icon-minus::before {
+.myIcon-minus::before {
   content: "E008"; }
 
-.icon-plus::before {
+.myIcon-plus::before {
   content: "E009"; }
 
-.icon-search::before {
+.myIcon-search::before {
   content: "E00A"; }

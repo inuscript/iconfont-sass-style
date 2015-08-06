@@ -53,7 +53,7 @@ $font: (
 @mixin iconfont-generate-font($font){
   @include iconfont-font-face(
     map-get($font, fontPath),
-    map-get($font, fontName),
+    map-get($font, fontName)
   );
   @include iconfont-icons(
     map-get($font, iconPrefix),
