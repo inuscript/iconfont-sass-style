@@ -2,16 +2,16 @@ $foobazFont: (
   fontName: "myFont",
   fontPath: "/path/to/font",
   glyphs: (
-    account: "E001",
-    arrow-down: "E002",
-    arrow-left: "E003",
-    arrow-right: "E004",
-    arrow-up: "E005",
-    basket: "E006",
-    close: "E007",
-    minus: "E008",
-    plus: "E009",
-    search: "E00A"
+    account: "\E001",
+    arrow-down: "\E002",
+    arrow-left: "\E003",
+    arrow-right: "\E004",
+    arrow-up: "\E005",
+    basket: "\E006",
+    close: "\E007",
+    minus: "\E008",
+    plus: "\E009",
+    search: "\E00A"
   )
 ) !default;
 

@@ -6,7 +6,7 @@ describe("params", function(){
   it("shoud return object", function(){
     var result = params(fixtrueGlyphs)
     var expect = result
-    console.log(result)
+    // console.log(result)
     assert.deepEqual(expect, result)
   })
 })

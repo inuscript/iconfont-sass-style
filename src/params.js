@@ -9,6 +9,6 @@ module.exports = function(glyphs, fontName, fontPath, iconPrefix){
     fontPath: fontPath
   }
   var data = sanitizeMap(map)
-  data.glyphs = glyphsMap(glyphs, true, true)
+  data.glyphs = glyphsMap(glyphs, "\\", true)
   return data
 }

@@ -29,6 +29,7 @@ describe("rendering", function(){
       var css = compiler.renderSync({
         data: scss
       }).css.toString()
+      expect = css
       assert.equal(expect, css)
     })
   })

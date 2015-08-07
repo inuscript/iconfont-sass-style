@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "myFont";
   src: url("/path/to/fontmyFont.eot");
@@ -14,31 +15,31 @@
   text-transform: none; }
 
 .myIcon-account::before {
-  content: "E001"; }
+  content: ""; }
 
 .myIcon-arrow-down::before {
-  content: "E002"; }
+  content: ""; }
 
 .myIcon-arrow-left::before {
-  content: "E003"; }
+  content: ""; }
 
 .myIcon-arrow-right::before {
-  content: "E004"; }
+  content: ""; }
 
 .myIcon-arrow-up::before {
-  content: "E005"; }
+  content: ""; }
 
 .myIcon-basket::before {
-  content: "E006"; }
+  content: ""; }
 
 .myIcon-close::before {
-  content: "E007"; }
+  content: ""; }
 
 .myIcon-minus::before {
-  content: "E008"; }
+  content: ""; }
 
 .myIcon-plus::before {
-  content: "E009"; }
+  content: ""; }
 
 .myIcon-search::before {
-  content: "E00A"; }
+  content: ""; }
