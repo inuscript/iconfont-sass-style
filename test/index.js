@@ -1,5 +1,5 @@
 var fs = require("fs")
-var assert = require("power-assert")
+var assert = require("assert")
 
 var iconfontSass = require("../src/render")
 var fixtrueGlyphs = require("./fixture/codepoint.json")
