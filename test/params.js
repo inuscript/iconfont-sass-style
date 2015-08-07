@@ -4,9 +4,14 @@ var fixtrueGlyphs = require("./fixture/codepoint-simple.json")
 
 describe("params", function(){
   it("shoud return object", function(){
-    var result = params(fixtrueGlyphs)
-    var expect = result
-    // console.log(result)
+    var result = params(fixtrueGlyphs, "foo", "/path/to/baz", ".my-icon-prefix-")
+    var expect = { 
+      fontName: '"foo"',
+      fontPath: '"/path/to/baz"',
+      iconPrefix: '".my-icon-prefix-"',
+      glyphs: { account: '"\\E001"', 'arrow-down': '"\\E002"' } 
+    }
+
     assert.deepEqual(expect, result)
   })
 })

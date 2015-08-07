@@ -1,14 +1,14 @@
 {
   "name": "iconfont-sass-style",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sass generator for iconfont.",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint **/*.js",
     "mocha": "mocha",
     "test": "npm run mocha && npm run lint"
   },
-  "keywords": [],
+  "keywords": ["sass", "scss", "iconfont", "icon", "font"],
   "author": "inuscript",
   "license": "ISC",
   "devDependencies": {
