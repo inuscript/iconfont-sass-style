@@ -2,7 +2,7 @@
   "name": "iconfont-sass-style",
   "version": "1.0.0",
   "description": "Sass generator for iconfont.",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
     "lint": "eslint **/*.js",
     "mocha": "mocha",

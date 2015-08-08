@@ -1,7 +1,7 @@
 var fs = require("fs")
 var assert = require("assert")
 
-var iconfontSass = require("../src/render")
+var iconfontSass = require("../src/")
 var fixtrueGlyphs = require("./fixture/codepoint.json")
 var compiler = require("node-sass")
 

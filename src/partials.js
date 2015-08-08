@@ -11,7 +11,7 @@ module.exports.mixins = function(){
   return template("mixins")
 }
 
-module.exports.load = function(fontVariable, functionName){
+module.exports.loader = function(fontVariable, functionName){
   functionName = functionName || "iconfont-generate-font"
   fontVariable = "$" + fontVariable
   return "@include " + functionName + "(" + fontVariable + ");"
