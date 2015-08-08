@@ -16,7 +16,7 @@ var initOptions = function(opts, append){
   var item = extend({
     iconPrefix: undefined,
     fontVariable: "font",
-    useDefaultFlag: true,
+    useDefaultFlag: true
   }, opts)
   return extend(item, append)
 }
@@ -27,9 +27,9 @@ var renderAll = function(glyphs, fontName, fontPath, opts){
   return render(fontParam, options.fontVariable, options.useDefaultFlag)
 }
 var renderMap = function(glyphs, fontVariable, useDefaultFlag){
-  var fontParam = params(glyphs, fontName, fontPath, options.iconPrefix)
-  return partials.map(map, fontVariable, useDefaultFlag)
+  var fontParam = params(glyphs)
+  return partials.map(fontParam, fontVariable, useDefaultFlag)
 }
 
-// module.exports.map = renderMap
+module.exports.map = renderMap
 module.exports = renderAll
