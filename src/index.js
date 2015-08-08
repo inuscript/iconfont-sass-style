@@ -26,10 +26,5 @@ var renderAll = function(glyphs, fontName, fontPath, opts){
   var fontParam = params(glyphs, fontName, fontPath, options.iconPrefix)
   return render(fontParam, options.fontVariable, options.useDefaultFlag)
 }
-var renderMap = function(glyphs, fontVariable, useDefaultFlag){
-  var fontParam = params(glyphs)
-  return partials.map(fontParam, fontVariable, useDefaultFlag)
-}
 
-module.exports.map = renderMap
 module.exports = renderAll
