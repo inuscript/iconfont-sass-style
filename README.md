@@ -18,4 +18,36 @@ var css = nodeSass.renderSync({
 
 ## API
 
-### `iconfontSass(glyphs, fontName, fontPath,)`
+### `iconfontSass(glyphs, fontName, fontPath, options)`
+
+#### `glyphs`
+Iconfont codepoint glyphs
+
+#### `fontName`
+Font name.
+
+#### `fontPath`
+Font path.
+
+#### `options`
+Enable below options
+
+- `iconPrefix`
+  - default `.icon-`
+  - You can set icon css selector prefix.
+  - Icon selector output like `.icon-foo`
+- `fontVariable`
+  - default `font`
+  - You can set font variable name like `$font`
+- `useDefaultFlag`
+  - default `true`
+  - Append variable `!defualt`
+- `includes`
+  - default: `["map", "mixins", "loader"]`
+  - Output css partials
+    - `map`
+      - Map variables
+    - `mixins`
+      - Font generator mixins
+    - `loader`
+      - Font mixin loader
