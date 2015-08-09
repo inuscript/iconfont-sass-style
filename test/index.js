@@ -19,6 +19,13 @@ describe("rendering", function(){
       })
       assert.equal(expect, result)
     })
+    it("should rendering only rendering", function(){
+      var expect = fs.readFileSync("./test/fixture/scss/includes-only-map.scss", "utf-8")
+      var result = iconfontSass(fixtrueGlyphs, "myFont", "/path/to/font", {
+        includes : ["map"]
+      })
+      assert.equal(expect, result)
+    })
   })
   describe("css rendering", function(){
     it("should enable compile to css", function(){
