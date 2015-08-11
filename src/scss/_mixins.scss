@@ -11,7 +11,7 @@
   }
 }
 
-@mixin iconfont-icons($name, $glyphs, $prefix : ".icon-"){
+@mixin iconfont-icons($name, $glyphs, $prefix){
   %icon {
     font-family: "#{$name}";
     -webkit-font-smoothing: antialiased;

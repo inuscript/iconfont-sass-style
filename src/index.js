@@ -19,7 +19,7 @@ var render = function(map, includes, fontVariable, useDefaultFlag){
 
 var initOptions = function(opts, append){
   var item = extend({
-    iconPrefix: undefined,
+    iconPrefix: ".icon-",
     fontVariable: "font",
     useDefaultFlag: true,
     includes: ["map", "mixins", "loader"]
