@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "myFont";
+  src: url("/path/to/fontmyFont.eot");
+  src: url("/path/to/fontmyFont.eot?#iefix") format("eot"), url("/path/to/fontmyFont.woff2") format("woff2"), url("/path/to/fontmyFont.woff") format("woff"), url("/path/to/fontmyFont.ttf") format("truetype"), url("/path/to/fontmyFont.svg#myFont") format("svg"); }
+
+.icon-account::before, .icon-arrow-down::before, .icon-arrow-left::before, .icon-arrow-right::before, .icon-arrow-up::before, .icon-basket::before, .icon-close::before, .icon-minus::before, .icon-plus::before, .icon-search::before {
+  font-family: "myFont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none; }
+
+.icon-account::before {
+  content: ""; }
+
+.icon-arrow-down::before {
+  content: ""; }
+
+.icon-arrow-left::before {
+  content: ""; }
+
+.icon-arrow-right::before {
+  content: ""; }
+
+.icon-arrow-up::before {
+  content: ""; }
+
+.icon-basket::before {
+  content: ""; }
+
+.icon-close::before {
+  content: ""; }
+
+.icon-minus::before {
+  content: ""; }
+
+.icon-plus::before {
+  content: ""; }
+
+.icon-search::before {
+  content: ""; }

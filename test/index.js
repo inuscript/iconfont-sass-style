@@ -29,14 +29,21 @@ describe("rendering", function(){
   })
   describe("css rendering", function(){
     it("should enable compile to css", function(){
-      var expect = fs.readFileSync("./test/fixture/output.css", "utf-8")
+      var expect = fs.readFileSync("./test/fixture/css/output.css", "utf-8")
+      var scss = iconfontSass(fixtrueGlyphs, "myFont", "/path/to/font")
+      var css = compiler.renderSync({
+        data: scss
+      }).css.toString()
+      assert.equal(expect, css)
+    })
+    it("should enable compile to css with iconfont", function(){
+      var expect = fs.readFileSync("./test/fixture/css/output-iconPrefix.css", "utf-8")
       var scss = iconfontSass(fixtrueGlyphs, "myFont", "/path/to/font", {
         iconPrefix: ".myIcon-"
       })
       var css = compiler.renderSync({
         data: scss
       }).css.toString()
-      expect = css
       assert.equal(expect, css)
     })
   })
